@@ -85,6 +85,7 @@ function inittimer(){
 function resetgame(){
     highest.innerText=wpm;
     randomParagraph();
+    timeup.innerHTML="";
     inpfield.value="";
         clearTimer(timer);
     timeleft=maxtime,charindex=mistakes=istyping=0;
