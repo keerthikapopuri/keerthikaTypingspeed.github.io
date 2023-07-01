@@ -62,7 +62,7 @@ function initTyping(){
     }
     else{
         inpfield.value="";
-        clearTimer(timer);
+        clearTimeout(timer);
     }
    
     
@@ -87,7 +87,7 @@ function resetgame(){
     randomParagraph();
     timeup.innerHTML="";
     inpfield.value="";
-        clearTimer(timer);
+    clearTimeout(timer);
     timeleft=maxtime,charindex=mistakes=istyping=0;
     timetag.innerText=timeleft;
     mistaketag.innerText=mistakes;
